@@ -1,6 +1,4 @@
 const { Program } = require('../');
-//  const { settings } = require('@pixi/settings');
-//  const { ENV } = require('@pixi/constants');
 const { skipHello } = require('@pixi/utils');
 
 skipHello();
@@ -67,11 +65,9 @@ describe('PIXI.Program', function ()
 
     it('should use 3xx shaders are passed', function ()
     {
-        let program;
-
         try
         {
-            program = new Program(vertexShader3xx, fragmentShader3xx);
+            const program = new Program(vertexShader3xx, fragmentShader3xx);
 
             expect(program.vertexSrc.includes(vertexShader3xx.trim())).to.equal(true);
             expect(program.fragmentSrc.includes(fragmentShader3xx.trim())).to.equal(true);
