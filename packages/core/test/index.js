@@ -1,6 +1,7 @@
 require('./BaseTexture');
 require('./Texture');
 require('./Renderer');
+require('./Program');
 require('./CanvasResource');
 require('./ImageResource');
 require('./SVGResource');
