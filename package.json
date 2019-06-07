@@ -11,6 +11,7 @@
     "pretest": "npm run lint && npm run build",
     "test": "floss --path test",
     "unit-test": "floss --path test",
+    "unit-test:debug": "floss --path test --debug",
     "docs": "mkdirp dist && jsdoc -c jsdoc.conf.json -R README.md",
     "types": "npm run types:legacy && npm run types:default",
     "types:default": "mkdirp dist/types && jsdoc -c types/jsdoc.conf.json && node types/assemble pixi.js",
